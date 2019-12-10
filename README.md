@@ -37,7 +37,7 @@ Getting Started on AWS
 The steps below outline creating an AWS account, creating some users,
 generating access keys and the importance of selecting a region.  Amazon has extensive tutorials on using their cloud services including using their UI to [launch a server.](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine)  Below are the minimum required steps to use Cloud Rails - AWS.  **Note that AWS accounts require a valid credit card**.
 
-1. [Create an AWS account.](https://portal.aws.amazon.com/billingh/signup)  
+1. [Create an AWS account.](https://portal.aws.amazon.com/billing/signup)  
   
 2. [Create users]()
 
