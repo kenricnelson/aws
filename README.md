@@ -47,15 +47,15 @@ generating access keys and the importance of selecting a region.  Amazon has ext
 
 
 Scripts  
--------  
+-------
 
-## [Python](python/README.md)
+We currently support four scripting languages;
+[Python](python/README.md), [Node](node), [Go](go) and [Java](java).
+Feel free to add more!  Each directory contains the set-up
+instructions for that langauge, packages, configurations and jupyter
+notebooks to initially set up the network (once), create a node from
+scratch and launch a pre-existing image with a checkpoint node.
 
-## [Node](node)
-
-## [Go](go)
-
-## [Java](java)
 
 
 

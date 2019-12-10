@@ -26,7 +26,14 @@ python command line or any your favorite IDE;
 Configuration files
 -------------------
 
-[boto3](https://aws.amazon.com/sdk-for-python/) requires a [credentials](credentials) file with your aws access id and key as well as the selected region.
+[boto3](https://aws.amazon.com/sdk-for-python/) requires a [credentials](credentials) file with your aws access id and key as well as the selected region.  The credentials are typically found in your home directory; on ubuntu in
+
+```bash
+~/.aws/credentials
+```
+
+see [boto3 credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html) for complete instructions and additional options.
+
 
 ### VPC
 
