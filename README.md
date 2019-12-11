@@ -11,7 +11,7 @@ blockchain data required to spin-up a fully functioning node.  Cloud
 Rails provides a common framework for developers across all blockchain
 platforms and projects.
 
-Cloud Rails - AWS is the Amazon Web Servers version and includes
+**Cloud Rails - AWS** is the Amazon Web Services version and includes
 scripts in [python](python), [node](node), [go](go) and [java](java)
 creating a Virtual Private Cloud (VPC) with all networking, an EC2
 instance (server) running the ubuntu operating system, a loader for an
