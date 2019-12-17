@@ -18,6 +18,34 @@ session = boto3.Session(profile_name='blockchain-nodes')
 ec2 = session.resource('ec2')
 
 
+# ## Helper functions to find existing subnets and security group IDs.
+# 
+# See AWS VPC notebook for creation of these resources.
+
+# In[ ]:
+
+
+def get_subnet_id(AVZONE=session.region_name+'b',
+                  subnet_type='public'):
+    
+    for vpc in ec2.vpcs.all():
+        for az in ec2.meta.client.describe_availability_zones()["AvailabilityZones"]:
+            for subnet in vpc.subnets.filter(Filters=[{"Name": "availabilityZone", "Values": [az["ZoneName"]]}]):
+                #print(vpc.id, az["ZoneName"], subnet.id, subnet.tags[0]['Value'])
+                if (az["ZoneName"] == AVZONE) & (subnet_type in subnet.tags[0]['Value']):
+                    return vpc.id, subnet.id
+
+def get_security_group_id(session,VPC_ID,SECURITYGROUP_NAME):
+    client = boto3.client("ec2", region_name=session.region_name)
+    return client.describe_security_groups(Filters = [{"Name":"vpc-id",
+                                               "Values":[VPC_ID]
+                                               },{
+                                                "Name":"group-name",
+                                                "Values":[SECURITYGROUP_NAME]
+                                              }])\
+                ['SecurityGroups'][0]['GroupId']
+
+
 # ## Create Network
 # 1. VPC
 # 2. InternetGateway
