@@ -1,0 +1,6 @@
+id	node	date	block	ami_id	name	type	datavolume_size
+bitcoin.org	Mainnet	2019-12-28T21:24:00	610208	ami-0106f83c9203e626f	Bitcoin	t2.2xlarge	350
+ethereum.org	Go Mainnet	2019-12-30T00:11:00	9183290	ami-0004031a4ee8254c0	Ethereum	t2.2xlarge	250
+ethereum.org	Parity Mainnet	2020-01-01T13:42:00	9196049	ami-05c08969541b3500b	Ethereum	t2.medium	200
+algorand.com	Mainnet	2019-12-31T18:24:00	4002414	ami-021305cee8b57d1bb	Algorand	t2.medium	100
+algorand.com	Testnet	2019-12-32T00:00:00	0		Algorand	t2.medium	50
